@@ -20,7 +20,7 @@ source "amazon-ebs" "ubuntu"{
   instance_type = "t2.micro"
   region = "ap-south-1"
   source_ami = "ami-0f58b397bc5c1f2e8"
-  ssh_username    = "ec2-user"
+  ssh_username    = "ubuntu"
   ami_regions     = [
                       "ap-south-1"
                     ]
