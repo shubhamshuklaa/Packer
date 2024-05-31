@@ -22,7 +22,7 @@ source "amazon-ebs" "ubuntu"{
   source-ami = "ami-0f58b397bc5c1f2e8"
   ssh_username    = "ec2-user"
   ami_regions     = [
-                      "ap-southeast-2"
+                      "ap-south-1"
                     ]
 
 # what to install, configure and file to copy/execute
@@ -38,14 +38,23 @@ build {
   destination = "/tmp/provisioner.sh"
 }
 
-  provisioner "shell"  {
-    inline = [
-    "chmod a+x /tmp/provisioner.sh",
-    "ls -la /tmp",
-    "pwd",
-    "cat /tmp/provisioner.sh",
-    "/bin/bash -x /tmp/provisioner.sh"
-    ]
+  provisioner "shell" {
+    inline = ["chmod a+x /tmp/provisioner.sh"]
   }
-}
+  
+  provisioner "shell" {
+    inline = [ "ls -la /tmp"]
+  }
+  
+    provisioner "shell" {
+    inline = [ "pwd"]
+  }
+  
+  provisioner "shell" {
+    inline = [ "cat /tmp/provisioner.sh"]
+  }
+
+  provisioner "shell" {
+    inline = ["/bin/bash -x /tmp/provisioner.sh"]
+  }
 }
