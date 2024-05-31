@@ -19,7 +19,7 @@ source "amazon-ebs" "ubuntu"{
   ami_name = "packer-ubuntu-aws-{{timestamp}}"
   instance_type = "t2.micro"
   region = "ap-south-1"
-  source-ami = "ami-0f58b397bc5c1f2e8"
+  source_ami = "ami-0f58b397bc5c1f2e8"
   ssh_username    = "ec2-user"
   ami_regions     = [
                       "ap-south-1"
