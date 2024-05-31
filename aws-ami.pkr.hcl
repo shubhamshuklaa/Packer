@@ -30,7 +30,7 @@ source "amazon-ebs" "ubuntu"{
 build {
   name = "hq-packer"
   sources = [
-    "source.amazon-ebs.amazon-linux"
+    "source.amazon-ebs.ubuntu"
   ]
 
   provisioner "file" {
