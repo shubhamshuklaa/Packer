@@ -24,6 +24,7 @@ source "amazon-ebs" "ubuntu"{
   ami_regions     = [
                       "ap-south-1"
                     ]
+}
 
 # what to install, configure and file to copy/execute
     
