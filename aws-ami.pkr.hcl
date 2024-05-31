@@ -42,7 +42,7 @@ build {
     inline = [
     "chmod a+x /tmp/provisioner.sh",
     "ls -la /tmp",
-    "pwd"
+    "pwd",
     "cat /tmp/provisioner.sh",
     "/bin/bash -x /tmp/provisioner.sh"
     ]
