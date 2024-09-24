@@ -9,7 +9,7 @@ pipeline {
     stage("Building AMI") {
       steps {
         
-        sh "packer build aws-ami-v1.pkr.hcl"
+        sh "packer build aws-ami.pkr.hcl"
       }
     }
   } 
