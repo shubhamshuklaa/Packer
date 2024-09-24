@@ -6,7 +6,7 @@
 ### Step3: Install Jenkins & Packer in the same EC-2 instance
 ### Step4: Set up GITHUB repository and push/create PACKER file related to create AMI.
 ### Step5: Create JenkinsFile and define stages to build packer file.
-### Step5: Set Jenkins Enviroment :
+### Step6: Set Jenkins Enviroment :
 #### a. create pipeline
 #### b. select scm to pull your git repo
 #### c. schedule build.
